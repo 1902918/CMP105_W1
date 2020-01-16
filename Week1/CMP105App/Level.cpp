@@ -14,6 +14,19 @@ Level::Level(sf::RenderWindow* hwnd)
 	circle.setFillColor(sf::Color::Blue);
 	circle.setOutlineColor(sf::Color::Red);
 
+	rectRed.setSize(sf::Vector2f(50, 50));
+	rectRed.setPosition(100, 250);
+	rectRed.setFillColor(sf::Color::Red);
+
+	rectGreen.setSize(sf::Vector2f(30, 30));
+	rectGreen.setPosition(110, 260);
+	rectGreen.setFillColor(sf::Color::Green);
+
+	rectBlue.setSize(sf::Vector2f(10, 10));
+	rectBlue.setPosition(120, 270);
+	rectBlue.setFillColor(sf::Color::Blue);
+
+
 }
 
 Level::~Level()
@@ -39,6 +52,10 @@ void Level::render()
 
 	window->draw(rect);
 	window->draw(circle);
+
+	window->draw(rectRed);
+	window->draw(rectGreen);
+	window->draw(rectBlue);
 
 	endDraw();
 }
