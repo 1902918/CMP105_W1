@@ -25,4 +25,7 @@ private:
 	sf::RectangleShape rectRed;
 	sf::RectangleShape rectGreen;
 	sf::RectangleShape rectBlue;
+
+	sf::Text text;
+	sf::Font font;
 };

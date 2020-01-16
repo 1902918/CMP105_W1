@@ -26,6 +26,16 @@ Level::Level(sf::RenderWindow* hwnd)
 	rectBlue.setPosition(120, 270);
 	rectBlue.setFillColor(sf::Color::Blue);
 
+	if (!font.loadFromFile("font/arial.ttf"))
+	{
+		std::cout << "Error loading font\n";
+	}
+
+	text.setFont(font);
+	text.setString("Hello World");
+	text.setCharacterSize(24);
+	text.setPosition(300,500);
+	text.setFillColor(sf::Color::Black);
 
 }
 
@@ -56,6 +66,8 @@ void Level::render()
 	window->draw(rectRed);
 	window->draw(rectGreen);
 	window->draw(rectBlue);
+
+	window->draw(text);
 
 	endDraw();
 }
