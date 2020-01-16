@@ -19,12 +19,14 @@ private:
 	void endDraw();
 	sf::RenderWindow* window;
 
-	sf::RectangleShape rect;
+	sf::RectangleShape rect1;
 	sf::CircleShape circle;
 
-	sf::RectangleShape rectRed;
-	sf::RectangleShape rectGreen;
-	sf::RectangleShape rectBlue;
+	sf::RectangleShape rect2;
+	sf::RectangleShape rect3;
+	sf::RectangleShape rect4;
+
+	sf::RectangleShape rect5;
 
 	sf::Text text;
 	sf::Font font;
